@@ -1,7 +1,7 @@
 <div align="center">
 🚀 LM Studio Tools Integration
 Supercharge your local AI with web-browsing capabilities!
-![alt text](https://img.shields.io/badge/LM_Studio-Enabled-blue?style=for-the-badge&logo=ai)
+[alt text](https://img.shields.io/badge/LM_Studio-Enabled-blue?style=for-the-badge&logo=ai)
 
 ![alt text](https://img.shields.io/badge/Model-Gemma_4-orange?style=for-the-badge)
 
