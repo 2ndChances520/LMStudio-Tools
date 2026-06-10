@@ -1,60 +1,4 @@
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "C:\\Users\\PUTYOURUSERNAMEHERE\\Desktop\\AI_Workspace"
-      ]
-    },
-    "playwright": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@playwright/mcp@latest",
-        "--executable-path",
-        "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-      ]
-    }
-  }
-}
 
-
-------------------------------------------------------------------------working as of 6826--------------------------
-
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "C:\\Users\\USERNAME\\Desktop\\AI_Workspace",
-        "C:\\Users\\USERNAME\\.lmstudio\\working-directories"
-      ]
-    },
-    "puppeteer": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-puppeteer"
-      ],
-      "env": {
-        "PUPPETEER_EXECUTABLE_PATH": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-      }
-    },
-    "coingecko": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote@latest",
-        "https://mcp.api.coingecko.com/mcp"
-      ]
-    }
-  }
-}
-------------------------------------------------------------------
 install these first from here: https://lmstudio.ai/lmstudio/wikipedia,https://lmstudio.ai/lmstudio/dice, full list here:https://mcpservers.org/all
 {
   "mcpServers": {
@@ -76,6 +20,15 @@ install these first from here: https://lmstudio.ai/lmstudio/wikipedia,https://lm
       "env": {
         "PUPPETEER_EXECUTABLE_PATH": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
       }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--executable-path",
+        "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      ]
     },
     "coingecko": {
       "command": "npx",
