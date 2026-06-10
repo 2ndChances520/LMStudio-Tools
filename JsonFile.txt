@@ -55,7 +55,7 @@
   }
 }
 ------------------------------------------------------------------
-
+install these first from here: https://lmstudio.ai/lmstudio/wikipedia,https://lmstudio.ai/lmstudio/dice, full list here:https://mcpservers.org/all
 {
   "mcpServers": {
     "filesystem": {
