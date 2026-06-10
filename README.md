@@ -1,7 +1,7 @@
 <div align="center">
 🚀 LM Studio Tools Integration
 Supercharge your local AI with web-browsing capabilities!
-[alt text](https://img.shields.io/badge/LM_Studio-Enabled-blue?style=for-the-badge&logo=ai)
+![alt text](https://img.shields.io/badge/LM_Studio-Enabled-blue?style=for-the-badge&logo=ai)
 
 ![alt text](https://img.shields.io/badge/Model-Gemma_4-orange?style=for-the-badge)
 
@@ -38,4 +38,4 @@ If everything is configured correctly, Gemma 4 will trigger the tool, process th
 🎉 Enjoy!
 You now have a fully functional, local, tool-calling AI. Feel free to tweak the system prompt and add more tools to the JSON file to expand your assistant's capabilities.
 If you like this project, don't forget to ⭐ star the repo!
-Pro-tip: Keep your Brave browser updated so the web-scraping/search tools continue to run smoothly!
+
