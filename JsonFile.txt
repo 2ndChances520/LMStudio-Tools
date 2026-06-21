@@ -82,3 +82,83 @@ Whenever the user asks about "the weather", "the forecast", or "weather in Sprin
 If the user asks for the weather in a different city, use your internal knowledge to estimate the latitude and longitude of that city to the best of your ability, then execute the weather tool.
 ------------------------------------------------------------
 LLM test prompt: I need you to roll two dice for me, 6 sided one time. tell me the face value of each and combine that total and display it to me as how many push ups i need to do for today. Then i need you to see what time it is for later, Next i need you to use puppeteer to navigate, scroll down a little bit, then screen shot this site https://civitai.com/images to C:\\Users\\USERNAME\\.lmstudio\\working-directories and move and save it to my AI_Workspace folder from C:\\Users\\USERNAME\\.lmstudio\\working-directories where you store screen shots, before creating the html. Next Resolve the name 'Andrew Ng' in OpenAlex to find his researcher profile. Once you have his ID, list his 5 most cited papers of all time. then i need you to use the Wikipedia tool and do a search for Alan Watts and give me a full deep dive 500 word minimum summary of what the wiki says. Then look up the price of BTC on coingecko tool. Next Pull the weather forecast for Springfield, MO today. I need to know the high and low temperatures, current conditions, and if there's any chance of rain. Finally i want you to collect all the information and use filesystem tool to search for available directories and then once found, create a single file html using css3, js and three.js and an image section with the local path from where you saved it so when i open the html it will show the image, to create a high end morning briefing to drink my coffee to and write the .html file to my AI_Workspace folder on my Desktop.so the image screen shot will be moved from the woking directories to my desk top, then create the html. ill check it when i get back from my morning run. thanks.
+
+
+
+
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\USERNAME\\Desktop\\AI_Workspace",
+        "C:\\Users\\USERNAME\\.lmstudio\\working-directories"
+      ]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {
+        "PUPPETEER_EXECUTABLE_PATH": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--executable-path",
+        "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      ]
+    },
+    "coingecko": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.api.coingecko.com/mcp"
+      ]
+    },
+    "time": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "time-mcp"
+      ]
+    },
+    "weather": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@dangahagan/weather-mcp"
+      ]
+    },
+    "openalex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://openalex.caseyjhand.com/mcp"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ]
+    },
+    "wsl-exec": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-wsl-exec"
+      ]
+    }
+  }
+}
